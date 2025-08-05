@@ -17,9 +17,10 @@ const ControlledUncontrolled = () => {
     <form onSubmit={handleSubmit}>
         {/*Controlled Component*/}
         <div>
-            <label htmlFor="">Name:</label>
+            <label htmlFor="firstname">Name:</label>
             <input
                 type="text"
+                name = "firstname"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
             />
